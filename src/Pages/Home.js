@@ -67,7 +67,7 @@ const Home = () => {
                             </div>
                         ) : (
 
-                            <div className="row">
+                            <div className="row  justify-content-center">
                                 <Card page="/" results={results} />
                             </div>
 
