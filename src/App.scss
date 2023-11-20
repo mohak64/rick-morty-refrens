@@ -1,0 +1,121 @@
+.active {
+  color: #0b5ed7 !important;
+  font-weight: bold;
+  border-bottom: 3px solid #0b5ed7;
+}
+
+.homebg{
+  min-height: 100vh;
+  background: linear-gradient(183deg, rgba(17, 16, 20, 0.98) 15.24%, #2D1671 20.24%, #3B228F 46.06%, #5539C8 94.78%);
+}
+
+.episodebg{
+  min-height: 100vh;
+  // background: linear-gradient(183deg, rgba(17, 16, 20, 0.98) 15.42%, #1870A1 15.42%, #1870A1 46.06%, #357AA0 94.78%);
+  background: linear-gradient(183deg, rgba(17, 16, 20, 0.98) 15.42%, #1870A1 20.24%, #1870A1 46.06%, #357AA0 94.78%);
+
+}
+
+.locationbg{
+  min-height: 100vh;
+ background: linear-gradient(183deg, rgba(17, 16, 20, 0.98) 13.24%, #fa4a41 20.24%, #FF2D55 46.06%, #FF375F 94.78%);
+
+}
+
+.bgblack{
+   background: rgba(17, 16, 20, 0.98);
+}
+
+.cw{
+  color: #FFF;
+text-shadow: 4px 4px 5px rgba(204, 204, 204, 0.25);
+font-family: Raleway;
+font-size: 3rem;
+font-style: normal;
+font-weight: 900;
+line-height: 140%; /* 100.8px */
+}
+
+.mw250{
+  min-width: 260px !important;
+}
+
+
+
+.ricksimage{
+  max-width: 48px;
+}
+
+.cwt{
+  color: #DDD;
+font-family: Rubik;
+font-size: 2rem;
+font-style: normal;
+font-weight: 600;
+line-height: 140%; /* 42px */
+}
+
+.ml2{
+  margin-left: 2px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.active{
+  color: #FFF !important;
+  border-bottom: 3px solid #FFF !important;
+}
+
+
+
+.Search_input__EB-W1 {
+  border-radius: 30px;
+background: rgba(255, 255, 255, 0.40);
+backdrop-filter: blur(10px);
+color: #101113;
+font-family: Raleway;
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: 140%; /* 44.8px */
+border: 5px #2D1671 !important;
+}
+
+.Search_btn__x1SHO{
+  background-color: #2D1671;
+  border: 2px solid #2D1671;
+}
+
+.no-x-scroll {
+  overflow-x: hidden;
+}
+
+.spinner-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-container30 {
+  min-height: 60vh;
+  min-width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 767px) {
+  .cw {
+    font-size: 1.5rem; 
+  }
+
+  .cwt{
+     font-size: 1rem; 
+  }
+
+  .Search_input__EB-W1{
+    font-size: 1rem; 
+  }
+}
