@@ -59,23 +59,34 @@ const Pagination = ({ pageNumber, info, updatePageNumber }) => {
               }
             }
           }
+           .pagination-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color:rgba(255, 255, 255, 0.40);
+            backdrop-filter: blur(10px); 
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.2); // Add a subtle box shadow
+          }
         `}
       </style>
+      <div className="pagination-container">
+        <ReactPaginate
+          className="pagination justify-content-center mt-2 mb-0 pb-2 gap-4"
+          nextLabel="Next"
+          forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
+          previousLabel="Prev"
+          previousClassName="btn btn-light fs-5 prev"
+          nextClassName="btn btn-light fs-5 next"
+          activeClassName="active"
+          pageCount={info?.pages}
+          onPageChange={pageChange}
+          pageClassName="page-item"
+          pageLinkClassName="page-link"
+          {...paginationConfig}
+        />
+      </div>
 
-      <ReactPaginate
-        className="pagination justify-content-center mt-4 mb-0 pb-4 gap-4"
-        nextLabel="Next"
-        forcePage={pageNumber === 1 ? 0 : pageNumber - 1}
-        previousLabel="Prev"
-        previousClassName="btn btn-light fs-5 prev"
-        nextClassName="btn btn-light fs-5 next"
-        activeClassName="active"
-        pageCount={info?.pages}
-        onPageChange={pageChange}
-        pageClassName="page-item"
-        pageLinkClassName="page-link"
-        {...paginationConfig}
-      />
     </>
   );
 };
